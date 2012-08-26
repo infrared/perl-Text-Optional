@@ -10,7 +10,7 @@ The text enclosed by parentheses are optional, and any sequence of optional text
 Given the above example, the following will return true:
 
 
- conf t
+conf t
  confi term
  configure t
  conf terminal

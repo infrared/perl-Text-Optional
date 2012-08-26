@@ -1,32 +1,33 @@
 Text-Optional
+============
 
-Initial reason for this module was to parse Cisco IOS command line syntax for quiz purposes. For example:
+Why
+---
 
- conf(igure) t(erminal)
+Initial reason for this module was to parse Cisco IOS command line syntax for quiz purposes.
+
+Example
+-------
+    conf(igure) t(erminal)
  
 The text enclosed by parentheses are optional, and any sequence of optional text will return as valid.
 
-
 Given the above example, the following will return true:
-
-
- conf t
- confi term
- configure t
- conf terminal
-
+    conf t
+    confi term
+    configure t
+    conf terminal
  and so on..
  
-
-Syntax:
-
- use Text::Optional;
- my $ob = Text::Optional->new;
- 
- my $valid = 'conf(igure) t(erminal)';
- my $test  = 'conf ter';
-  
- $ob->check($valid, $test) ? print  "yup" : print "nope";
+Syntax
+------
+    use Text::Optional;
+    my $ob = Text::Optional->new;
+     
+    my $valid = 'conf(igure) t(erminal)';
+    my $test  = 'conf ter';
+      
+    $ob->check($valid, $test) ? print  "yup" : print "nope";
  
  
  
