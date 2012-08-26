@@ -13,10 +13,12 @@ Example
 The text enclosed by parentheses are optional, and any sequence of optional text will return as valid.
 
 Given the above example, the following will return true:
+
     conf t
     confi term
     configure t
     conf terminal
+    
  and so on..
  
 Syntax
