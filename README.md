@@ -12,7 +12,7 @@ Given:
 
     conf(igure) t(erminal)
  
-The text enclosed by parentheses are optional, and any sequence of optional text will return as valid.
+The text enclosed by parentheses is optional, and any sequence of optional text will return true.
 
 For the above example, the following tests will return true:
 
